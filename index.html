@@ -3,22 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lol</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   </head>
-  <body>
-    <div class="wrapper">
-      <h2 class="question">Do you love me?</h2>
-      <img
-        class="gif"
-        alt="gif"
-        src="https://media.tenor.com/-5rFKAl9nh4AAAAi/usagyuuun-cat.gif"
-      />
-      <div class="btn-group">
-        <button class="yes-btn">Yes</button>
-        <button class="no-btn">No</button>
+  <body class="fade-in">
+    <div class="rose-container" id="roseContainer"></div>
+
+    <div class="container">
+      <div class="text-heading">
+        Happy Birthday <span class="typing"></span>
+      </div>
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/N0qzDHLIjBA"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <button onclick="playConfetti()" id="openLetter">click this 🥺</button>
+      <button onclick="playConfetti()" id="confettiButton">yay 🎊</button>
+    </div>
+
+    <div id="letterModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p>
+          HAPPY BIRTHDAY PO!!!!🥳🥳🥳<br /><br />
+          I cannot express how grateful I am to have you in my life.<br />From
+          the moment we met, I felt comfortable with you.<br />You never fail to
+          captivate me with your beauty, both inside and out.<br /><br />You're
+          a kind person even if you say otherwise and your compassion are just
+          some of the many qualities that make me fall in love with you over and
+          over again. <br />I appreciate everything you do for me, whether its
+          the little things like tinutulungan mo ako sa school like sa
+          activities and ginagawa mo pa nga yung iba para saakin 💀💀💀,
+          igdadrawing mo pa ako and su tinao mo sakong letters yaon pa sa drawer
+          ko, and you're always there for me when may problem ako hehe 😊.<br /><br />Thank
+          you for being the most amazing person in my life. I promise to cherish
+          and love you forever mwa! 😊😊😊
+        </p>
       </div>
     </div>
+
+    <div class="sliding-images left-images">
+      <img
+        src="images/I.png"
+        alt="Left Image 1"
+        id="leftImage1"
+        class="hidden left"
+      />
+      <img
+        src="images/I (1).png"
+        alt="Left Image 2"
+        id="leftImage2"
+        class="hidden left"
+      />
+      <img
+        src="images/I (2).png"
+        alt="Left Image 3"
+        id="leftImage3"
+        class="hidden left"
+      />
+    </div>
+    <div class="sliding-images right-images">
+      <img
+        src="images/I (3).png"
+        alt="Right Image 1"
+        id="rightImage1"
+        class="hidden right"
+      />
+      <img
+        src="images/I (4).png"
+        alt="Right Image 2"
+        id="rightImage2"
+        class="hidden right"
+      />
+      <img
+        src="images/I (5).png"
+        alt="Right Image 3"
+        id="rightImage3"
+        class="hidden right"
+      />
+    </div>
+
+    <audio
+      id="confettiSound"
+      src="music/confetti_sound.mp3"
+      preload="auto"
+    ></audio>
+    <audio id="buttonMusic" src="music/button_music.mp3" preload="auto"></audio>
+    <audio id="vineBoom" src="music/vine_boom.mp3" preload="auto"></audio>
+
     <script src="script.js"></script>
+    <script></script>
   </body>
 </html>
